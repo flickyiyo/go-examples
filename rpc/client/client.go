@@ -22,7 +22,7 @@ func main() {
 		var reply bool
 		err = client.Call("Listener.GetLine", line, &reply)
 		if err != nil {
-			log.Fatal(err)
+			panic(err)
 		}
 	}
 }
